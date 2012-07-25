@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+import urllib2
+import json
+import sys
+
+
+def check():
+	try:
+		o = urllib2.urlopen("http://localhost:8081/metrics")
+		contents = o.read()
+	except Exception, e:
+		raise Exception, "Cannot contact server: %s"%e
+
+	try:
+		j = json.loads(contents)
+	except Exception, e:
+		raise Exception, "Cannot parse JSON output: %r"%contents
+
+	try:
+		atc = j['org.eclipse.jetty.util.thread.QueuedThreadPool']["active-threads"]['value']
+	except Exception, e:
+		raise Exception, "Cannot find active threads count in JSON: %r"%contents
+
+	assert atc <= 10, 'active thread count is too high: %s'%atc
+
+def main():
+	try: check()
+	except Exception, e:
+		sys.stderr.write("Error: %s\n"%e)
+		return 1
+	return 0
+
+
+if __name__ == "__main__":
+	sys.exit(main())
