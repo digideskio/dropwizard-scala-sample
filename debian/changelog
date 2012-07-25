@@ -1,5 +1,5 @@
-dropwizard-scala-sample (0.0.1-1) unstable; urgency=low
+dropwizard-scala-sample (0.0.1) unstable; urgency=low
 
-  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Initial release
 
- -- Ubuntu <ubuntu@unknown>  Wed, 25 Jul 2012 19:14:24 +0000
+ -- Manuel Amador (Rudd-O) <challenge@rudd-o.com>  Wed, 25 Jul 2012 19:14:24 +0000

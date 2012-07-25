@@ -1,5 +1,5 @@
 Source: dropwizard-scala-sample
-Section: The Dropwizard Scala sample
+Section: unknown
 Priority: extra
 Maintainer: Manuel Amador (Rudd-O) <challenge@rudd-o.com>
 Build-Depends: debhelper (>= 8.0.0), maven2
