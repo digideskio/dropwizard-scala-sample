@@ -1,0 +1,4 @@
+!/bin/bash
+
+java -cp /usr/share/airbnb/dropwizard-scala-sample-*-SNAPSHOT.jar de.leibert.App server /usr/share/airbnb/sample.yml
+
