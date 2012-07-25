@@ -1,1 +1,5 @@
 target
+debian/dropwizard-scala-sample.debhelper.log
+debian/dropwizard-scala-sample.substvars
+debian/dropwizard-scala-sample/
+debian/files
