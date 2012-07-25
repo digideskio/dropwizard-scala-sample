@@ -20,6 +20,8 @@ set -e
 
 case "$1" in
     configure)
+	id dropwizard-scala-sample > /dev/null 2>&1 || \
+	useradd -d /var/lib/dropwizard-scala-sample -m -r dropwizard-scala-sample
     ;;
 
     abort-upgrade|abort-remove|abort-deconfigure)

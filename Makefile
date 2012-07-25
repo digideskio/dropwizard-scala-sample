@@ -8,3 +8,5 @@ install:
 	mkdir -p $(DESTDIR)/usr/bin
 	cp bin/dropwizard-scala-sample $(DESTDIR)/usr/bin/
 	chmod 755 $(DESTDIR)/usr/bin/dropwizard-scala-sample
+	mkdir -p $(DESTDIR)/etc/init
+	cp upstart/*.conf $(DESTDIR)/etc/init/
