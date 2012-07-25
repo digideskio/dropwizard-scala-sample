@@ -10,6 +10,6 @@ Vcs-Browser: https://github.com/Rudd-O/dropwizard-scala-sample
 
 Package: dropwizard-scala-sample
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, bash, default-jre
 Description: This package is an example Scala server
   This package runs a small demo Web server using Scala.
